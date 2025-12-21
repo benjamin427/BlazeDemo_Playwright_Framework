@@ -6,7 +6,6 @@ exports.blazedemo_login = class BlazeDemo_Login {
         this.password = page.getByRole("textbox", {name: "Password"})
         this.submitButton = page.getByRole("button", {name: "Login"})
     }
-
     async visitWebsite(){
         await this.page.goto("https://blazedemo.com/login")
 
@@ -15,7 +14,6 @@ exports.blazedemo_login = class BlazeDemo_Login {
         await this.emailAddress.fill(email_address)
         await this.password.fill(password)
         await this.submitButton.click()
-    
     }
     async close(){
         await this.page.close()
