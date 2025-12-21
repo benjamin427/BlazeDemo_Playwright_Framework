@@ -1,3 +1,4 @@
+// Page object for the user to reset password
 exports.blazedemo_passwordreset = class BlazeDemo_Password_Reset{
     constructor(page){
         this.page = page

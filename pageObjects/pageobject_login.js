@@ -1,5 +1,4 @@
-const {expect} = require('@playwright/test')
-
+// Page object for the login screen of the BlazeDemo.com website
 exports.blazedemo_login = class BlazeDemo_Login {
     constructor(page){
         this.page = page

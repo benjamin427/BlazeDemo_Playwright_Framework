@@ -1,5 +1,4 @@
-const {expect} = require('@playwright/test')
-
+// Page object of the registration form
 exports.blazedemo_register = class BlazeDemo_Register {
     constructor(page){
         this.page = page
