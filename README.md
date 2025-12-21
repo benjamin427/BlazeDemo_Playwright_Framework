@@ -4,11 +4,11 @@ Go to nodejs website to download the current version of nodejs to use Playwright
 
 Project setup:
 
-Make a directory folder from your terminal, and once you're inside the directory you've created, type the npm install command "npm init playwright@latest" to start creating your project.
+Make a directory folder from your terminal, and once you're inside the directory you've created, type "npm install playwright@latest" to start creating your project.
 
-Next you're going to initialize Playwright by typing "npm init playwright". Then follow the prompts to select the language (select JavaScript); type 'test' for where you want the end-to-end tests, type 'y' to add a github actions workflow in the project, and type 'y' to let playwright install browsers automatically. 
+Next you're going to initialize Playwright by typing "npm init playwright" to start the process of creating your project. Then follow the prompts to select the language (select JavaScript); type 'test' for where you want the end-to-end tests, type 'y' to add a github actions workflow in the project, and type 'y' to let playwright install browsers automatically. 
 
-Once you completed creating your project setup, type npx playwright test so it will execute the test-examples. If you have a VSCode alleady installed in your machine, type "code" and it will automatically launch the VSCode window.
+Once you've completed your project setup, type "npx playwright test" so it will execute the test suite. If you have a VSCode alleady installed in your machine, type "code" and it will automatically launch the VSCode window.
 
 
 Setup and script commands:
