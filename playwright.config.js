@@ -3,6 +3,7 @@ import dotenv from 'dotenv';
 import path from 'path';
 import { defineConfig, devices } from '@playwright/test';
 
+
 /**
  * Read environment variables from file.
  * https://github.com/motdotla/dotenv
@@ -25,7 +26,6 @@ dotenv.config({
 export default defineConfig({
   timeout: 60000,
   globalTimeout: 3600000,
-  
   testDir: './test',
   /* Run tests in files in parallel */
   fullyParallel: true,
@@ -40,6 +40,7 @@ export default defineConfig({
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
+    headless: true,
     baseURL: process.env.BLAZEDEMO_URL ?? '',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
