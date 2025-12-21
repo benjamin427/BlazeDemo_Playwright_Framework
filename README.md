@@ -15,7 +15,7 @@ Setting up script commands:
 
 In order to create custom script commands you will need to go to the project.json file.
 
-Under the "script" section is where you can create the commands that you will use on your terminal. All of the commands are available for you to select which browser to use for test execution. To select a browser in Playwright, type the command "npm run test:chromium" to run the test execution usingthe chrome browser.
+Under the "script" section is where you can create the commands that you will use on your terminal. All of the commands are available for you to select which browser to use for test execution. To select a browser in Playwright, type the command "npm run test:chromium" to run the test execution using the chrome browser.
 
 If you choose to use a Firefox browser or WebKit, type "npm run test:firefox" or "npm run test:webkit" to run the test execution using the Firefox browser or Playwright's generic version.
 
