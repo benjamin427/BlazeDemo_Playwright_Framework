@@ -11,7 +11,7 @@ Next you're going to initialize Playwright by typing "npm init playwright" to st
 Once you've completed your project setup, type "npx playwright test" so it will execute the test suite. If you have a VSCode alleady installed in your machine, type "code" and it will automatically launch the VSCode window.
 
 
-Setup and script commands:
+Setting up script commands:
 
 In order to create custom script commands you will need to go to the project.json file.
 
