@@ -20,5 +20,21 @@ Under the "script" section is where you can create the commands that you will us
 If you choose to use a Firefox browser or WebKit, type "npm run test:firefox" or "npm run test:webkit" to run the test execution using the Firefox browser or Playwright's generic version.
 
 
+Testing methodologies:
 
+In this framework, I've designed it to focus heavily on edge case testing and positive and negative based tests. I provided complete test coverage of the pages that were suitable for test automation. 
+
+
+Challenges and solutions:
+
+In certain situations when designing and executing this framework, I've experienced timimg issues with certain functions that were used for automating user input, and the browsers closed before any attemnpt for the functions to execute inputing text in every field on each form. The solution I've found was to include more "awaits" on all test files so the closing of the browser doesn't interfere with targeting the element to perforn automating user input.     
+
+
+Tech stack:
+
+The tech stack I've used were Dotenv, NodeJS, VSCode, Playwright, Chrome, Firefox, WebKit, and JavaScript.
+
+The purpose of this project:
+
+The reason I chosed BlazeDemo.com as the website to use for test automation was due to the fact that it was a safe platform that doesn't influence real world test data that could cause potential safety issues and concerns.   
 
