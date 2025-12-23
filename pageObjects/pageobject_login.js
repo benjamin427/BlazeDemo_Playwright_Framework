@@ -10,9 +10,17 @@ exports.blazedemo_login = class BlazeDemo_Login {
         await this.page.goto("https://blazedemo.com/login")
 
     }
-    async login(email_address, password){
+    async positive_test_login(email_address, password){
         await this.emailAddress.fill(email_address)
         await this.password.fill(password)
+        await this.submitButton.click()
+    }
+    async negative_test_email_address_login(password){
+        await this.password.fill(password)
+        await this.submitButton.click()
+    }
+    async negative_test_password(email_address){
+        await this.emailAddress.fill(email_address)
         await this.submitButton.click()
     }
     async close(){
