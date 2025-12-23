@@ -32,7 +32,7 @@ In certain situations when designing and executing this framework, I've experien
 
 Tech stack:
 
-The tech stack I've used were Dotenv, NodeJS, VSCode, Playwright, Chrome, Firefox, WebKit, and JavaScript.
+The tech stack I've used were Dotenv, NodeJS, VSCode, Playwright, Chrome, Firefox, WebKit, Git, GitHub, GitHub Actions, Windows 11, and JavaScript.
 
 The purpose of this project:
 
