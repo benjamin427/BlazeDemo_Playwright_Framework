@@ -77,6 +77,15 @@ test("Should return a error prompt on the empty text field 'confirm password' af
     await expect(page).toHaveTitle(title)
     await blazedemoRegister.negative_test_registration_form_password_confirm(name, company, emailAddress, password)
 })
+test("Should return a prompt message indicating the user to fill out the form", async({page}) => {
+    const blazedemoRegister = new blazedemo_register(page)
+    const title = process.env.REGISTER_TITLE
+    const endpoint_url = process.env.REGISTER_ENDPOINT
+
+    await expect(page).toHaveURL(endpoint_url)
+    await expect(page).toHaveTitle(title)
+    await blazedemoRegister.negative_test_registration_form()
+})
 
 test.afterEach(async({page}) => {
     await page.close()
