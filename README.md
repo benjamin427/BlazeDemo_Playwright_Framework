@@ -19,6 +19,11 @@ Under the "script" section is where you can create the commands that you will us
 
 If you choose to use a Firefox browser or WebKit, type "npm run test:firefox" or "npm run test:webkit" to run the test execution using the Firefox browser or Playwright's generic version.
 
+Generating reports:
+
+After running a test execution and the CI/CD pipeline has completed a build, there will be a report that is from a generated artifact which is a zip file that will contain the report document.
+There will be an option under the "artifact" section where you can download the zip file that contains the complete report document. 
+
 
 Testing methodologies:
 
