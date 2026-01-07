@@ -23,6 +23,9 @@ exports.blazedemo_login = class BlazeDemo_Login {
         await this.emailAddress.fill(email_address)
         await this.submitButton.click()
     }
+    async negative_test_login(){
+        await this.submitButton.click()
+    }
     async close(){
         await this.page.close()
     }
