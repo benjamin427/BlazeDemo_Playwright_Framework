@@ -53,6 +53,9 @@ exports.blazedemo_register = class BlazeDemo_Register {
         await this.emailAddress.fill(email_address)
         await this.password.fill(password)
         await this.submitButton.click()
+    }
+    async negative_test_registration_form() {
+        await this.submitButton.click()
     }    
     async close(){
         await this.page.close()
