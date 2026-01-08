@@ -1,5 +1,5 @@
 const {expect, test} = require('@playwright/test')
-const {blazedemo_register} = require('./pageObject/pageobject_register')
+const {blazedemo_register} = require('./page_object/pageobject_register/')
 
 test("Successful completion of registration form", async({page}) => {
   // Environment variables from the .env.register file
