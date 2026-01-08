@@ -1,5 +1,5 @@
 const {expect, test} = require('@playwright/test')
-const {blazedemo_login} = require('./pageObject/pageobject_login')
+const {blazedemo_login} = require('./page_object/pageobject_login/')
 
 
 test("Regression test of the login form", async ({page}) => {
