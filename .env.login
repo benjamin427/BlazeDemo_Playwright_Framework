@@ -1,0 +1,7 @@
+BLAZEDEMO_URL=https://www.blazedemo.com/login
+BLAZEDEMO_LOGIN_ENDPOINT=/login
+BLAZEDEMO_LOGIN_TITLE=BlazeDemo
+BLAZEDEMO_LOGIN_EMAIL=random@random.com
+BLAZEDEMO_LOGIN_PASSWORD=testAdmin123
+BLAZEDEMO_LOGIN_SPECIAL_CHARACTERS=!!@@$%$^%&$$&
+BLAZEDEMO_LOGIN_URL_PLACEHOLDER=https://jsonplaceholder.typicode.com/users
