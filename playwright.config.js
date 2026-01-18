@@ -18,11 +18,29 @@ dotenv.config({
 dotenv.config({
   path: path.resolve(__dirname, `.env.${process.env.NODE_ENV ?? 'register'}`)
 })
+dotenv.config({
+  path: path.resolve(__dirname, `.env.${process.env.NODE_ENV ?? 'flightPurchaseAerLingus'}`)
+})
+dotenv.config({
+  path: path.resolve(__dirname, `.env.${process.env.NODE_ENV ?? 'flightPurchaseLufthansa'}`)
+})
+dotenv.config({
+  path: path.resolve(__dirname, `.env.${process.env.NODE_ENV ?? 'flightPurchaseUnitedAirlines'}`)
+})
+dotenv.config({
+  path: path.resolve(__dirname, `.env.${process.env.NODE_ENV ?? 'flightPurchaseVirginAmerica'}`)
+})
+dotenv.config({
+  path: path.resolve(__dirname, `.env.${process.env.NODE_ENV ?? 'reserveFlights'}`)
+})
+dotenv.config({
+  path: path.resolve(__dirname, `.env.${process.env.NODE_ENV ?? 'home'}`)
+})
 /**
  * @see https://playwright.dev/docs/test-configuration
  */
 export default defineConfig({
-  globalTimeout: 900000,
+  globalTimeout: 21000000,
   testDir: './test',
   /* Run tests in files in parallel */
   fullyParallel: true,
