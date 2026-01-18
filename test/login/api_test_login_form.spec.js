@@ -3,9 +3,10 @@ import { time } from 'node:console'
 
 test("Create data to use to fill out the form", async({request, page}) => {
     const reference_emailAddress = process.env.BLAZEDEMO_LOGIN_EMAIL
-    const reference_password = process.env.BLAZEDEMO_LOGIN_PASSWORD
+    var reference_password = process.env.BLAZEDEMO_LOGIN_PASSWORD
     const placeholder_url = process.env.BLAZEDEMO_LOGIN_URL_PLACEHOLDER
-
+    // Protecting sensitive information for password reference
+    reference_password = "*************"
     //Creating data from a resource
     const response = await request.post(placeholder_url, {
         data: {
