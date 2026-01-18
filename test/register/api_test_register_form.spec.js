@@ -4,8 +4,9 @@ test("Create data to use for submitting the form", async({page, request}) => {
     const name = process.env.BLAZEDEMO_REGISTER_NAME
     const company = process.env.BLAZEDEMO_REGISTER_COMPANY
     const emailAddress = process.env.BLAZEDEMO_REGISTER_EMAIL
-    const password = process.env.BLAZEDEMO_REGISTER_PASSWORD
+    var password = process.env.BLAZEDEMO_REGISTER_PASSWORD
     const placeholder_url = process.env.BLAZEDEMO_REGISTER_URL_PLACEHOLDER
+    password = "******************"
     const response = await request.post(placeholder_url,  {
         data: {
             name: name,
